@@ -214,6 +214,12 @@ header .header-content .header-content-inner p {
   max-width: 400px;
   margin: 50px auto 0;
 }
+.service-box a {
+  display: inline-block;
+}
+.service-box a:hover {
+  transform: scale(1.2);
+}
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
