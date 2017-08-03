@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Aplikimi per kurorezim</title>
+    <link rel="icon" type="image/png" href="img/image.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> 
+
+    </head>
+
+
+<body style="background: rgba(82, 86, 89, 0.06);">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||functio{
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-86869585-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+    <a href="">
+      <section class="menu">
+          <div class="menu-left-part">
+          <p><b>Aplikimi për kurorëzim</b></p>
+          </div>
+      </section>
+    </a>
+    <br>
+    <br>
+    <section class="content cw " style="text-align: left;background:white">
+        <h1 class="viz-title">Te dhenat personale te personit te pare</h1> <img id="output" src='img/profile.png' onchange="loadFile(event)" class="profimg" onclick="document.getElementById('clicker').click()" />
+        <form method="post" action="kalendari.html" enctype="multipart/form-data">
+            <!-- personal -->
+            <div class="group">
+                <div class="marger-text">Emri:<span id="req">*</span></div>
+                <div id="padder">
+                    <input type="text" name="per_name" required /> </div>
+            </div>
+            <div class="group">
+                <div class="marger-text">Mbiemri:<span id="req">*</span></div>
+                <div id="padder">
+                    <input type="text" name="per_sname" required/> </div>
+            </div>
+            <div class="group">
+                <div class="marger-text">Mbiemri i dytë:</div>
+                <div id="padder">
+                    <input type="text" name="secsur"/> </div>
+            </div>
+            <div class="group">
+                <div class="group">
+                    <div class="marger-text">Data e lindjes:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="date" name="per_date" min="1953-01-01" max="1999-03-21" required/> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Vendlindja:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="text" name="per_vend" required/> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Gjinia:<span id="req">*</span></div>
+                    <div id="padder">
+                        <select name="per_gj" required>
+                            <option value="">-</option>
+                            <option value="1">Mashkull</option>
+                            <option value="0">Femer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Gjendja martesore:<span id="req">*</span></div>
+                    <div id="padder">
+                        <select name="per_stat" required>
+                            <option value="">-</option>
+                            <option value="0">Beqar/e</option>
+                            <option value="1">I/E Martuar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Kombësia:</div>
+                    <div id="padder">
+                        <input type="text" name="per_nation" /> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Numri personal:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="number" name="perid" required="" /> </div>
+                </div>
+                <br/>
+                <hr/>
+				<h1 class="viz-title">Te dhenat personale te personit te dyte</h1> <img id="output" src='img/profile.png' onchange="loadFile(event)" class="profimg" onclick="document.getElementById('clicker').click()" />
+        <form method="post" enctype="multipart/form-data">
+            <!-- personal -->
+            <div class="group">
+                <div class="marger-text">Emri:<span id="req">*</span></div>
+                <div id="padder">
+                    <input type="text" name="per_name" required /> </div>
+            </div>
+            <div class="group">
+                <div class="marger-text">Mbiemri:<span id="req">*</span></div>
+                <div id="padder">
+                    <input type="text" name="per_sname" required/> </div>
+            </div>
+            <div class="group">
+                <div class="marger-text">Mbiemri i dytë:</div>
+                <div id="padder">
+                    <input type="text" name="secsur"/> </div>
+            </div>
+            <div class="group">
+                <div class="group">
+                    <div class="marger-text">Data e lindjes:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="date" name="per_date" min="1953-01-01" max="1999-03-21" required/> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Vendlindja:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="text" name="per_vend" required/> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Gjinia:<span id="req">*</span></div>
+                    <div id="padder">
+                        <select name="per_gj" required>
+                            <option value="">-</option>
+                            <option value="1">Mashkull</option>
+                            <option value="0">Femer</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Gjendja martesore:<span id="req">*</span></div>
+                    <div id="padder">
+                        <select name="per_stat" required>
+                            <option value="">-</option>
+                            <option value="0">Beqar/e</option>
+                            <option value="1">I/E Martuar</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Kombësia:</div>
+                    <div id="padder">
+                        <input type="text" name="per_nation" /> </div>
+                </div>
+                <div class="group">
+                    <div class="marger-text">Numri personal:<span id="req">*</span></div>
+                    <div id="padder">
+                        <input type="number" name="perid" required="" /> </div>
+                </div>
+                <br/>
+                <!-- /personal -->
+
+                <input type="file" accept="image/*" onchange="" style="display: none;" id="clicker" name="imgs">
+                <div class="marger">
+                    <button name="submit">Cakto datën e kurorëzimit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <br/>
+    <br /> </div>
+</body>
+
+
+<!-- Mirrored from aztech-ks.com/puna/puna.php?p=56 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 02 Aug 2017 12:36:00 GMT -->
+</html>
+<style type="text/css">
+    body,
+    html {
+        padding: 0;
+        height: 100%
+    }
+    html {
+        margin: 0;
+        width: 100%
+    }
+    body {
+        width: 850px;
+        max-width: 100%;
+        font-family: Roboto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        margin: auto
+    }
+    @media only screen and (max-width: 620px) {
+        .cond,
+        .personal {
+            height: auto!important
+        }
+        .menu {
+            display: table!important
+        }
+        .personal {
+            position: relative!important;
+            display: block!important;
+            padding-bottom: 15px!important
+        }
+        .cond {
+            text-align: center!important
+        }
+        .condbutton {
+            margin-bottom: 5px!important
+        }
+        .viz-b {
+            max-width: 90%!important
+        }
+        .profimg {
+            display: block;
+            float: initial!important;
+            margin: auto auto 15px
+        }
+        .content {
+            max-width: 100%!important;
+            width: 100%!important;
+            margin: 0!important;
+            padding: 0!important;
+            border: 0!important
+        }
+    }
+    .menu-href,
+    .menu-left-part,
+    .personal {
+        display: inline-block
+    }
+    .menu{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+    text-align: center;
+    background: #1688A2;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+    a {
+        text-decoration: none;
+        color: inherit
+    }
+    .menu-left-part {
+      margin-right: 10px;
+      line-height: 20px;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 390px;
+      height: 100%;
+    }
+    p{
+        text-shadow: 5px 5px 10px #FFFFFF;
+        font-size: 30px;
+      }
+      .menu-href {
+          height: 100%;
+          padding-left: 8px;
+          padding-right: 8px;
+          color: #fff;
+          background-color: #009688
+      }
+      .menu-href:hover {
+          padding-bottom: 3px;
+          transition: .2s
+      }
+    .personal {
+        width: 205px;
+        overflow: hidden;
+        height: 65px;
+        right: 0;
+        position: absolute;
+        padding: 3px
+    }
+    .profileimage {
+        width: 55px;
+        border-radius: 55px;
+        line-height: 32.5px;
+        position: absolute;
+        font-weight: 600
+    }
+    .contactpart {
+        margin-left: 60px;
+        max-width: 104.33px;
+        word-wrap: break-word
+    }
+    .username {
+        margin-top: 5px;
+        font-size: 15px;
+        display: block;
+        color: #2196F3;
+        font-weight: 600
+    }
+    .ap,
+    .condbutton,
+    .hrp,
+    .notif {
+        display: inline-block
+    }
+    .position {
+        font-size: 11px;
+        color: gray
+    }
+    .ap {
+        height: 80%
+    }
+    .notif {
+        width: 30px;
+        margin: auto
+    }
+    .cond {
+        height: 55px;
+        text-align: right;
+        margin: 15px
+    }
+    .condbutton {
+      min-width: 120px;
+      height: 40px;
+      line-height: 40px;
+      text-align: left;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 20px;
+      color: #fff
+    }
+    .co {
+        background-color: #4caf50
+    }
+    .ct {
+        background-color: #03a9f4
+    }
+    .con-page {
+        min-height: 94%;
+        margin-bottom: 15px
+    }
+    .content {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 758px;
+        box-shadow: 0 9px 25px 0 rgba(0, 0, 0, .2);
+        padding-bottom: 15px;
+        overflow: hidden;
+        margin: auto;
+        max-width: 90%;
+        text-align: center
+    }
+    .viz-b,
+    .viz-b-name,
+    .viz-title {
+        text-align: left
+    }
+    .viz-title {
+        color: gray;
+        padding-left: 15px;
+        font-size: 20px;
+    }
+    .viz-b {
+        color: #fff;
+        width: 90%;
+        background: #4CAF50;
+        height: auto;
+        overflow: hidden;
+        display: block;
+        margin: auto auto 15px;
+        border-radius: 3px
+    }
+    .viz-b-name {
+        font-size: 21px;
+        font-weight: 400;
+        display: inline-block
+    }
+    .viz-b-city {
+        padding-left: 11px;
+        display: block;
+        font-weight: 100
+    }
+    #padder,
+    .marger-text,
+    span {
+        display: inline-block
+    }
+    .viz-b-date {
+        padding: 1.3px 1.3px 1.3px 5px;
+        margin: auto;
+        font-size: 13px;
+        text-align: right
+    }
+    .viz-b-comment {
+        font-size: 15px;
+        padding-left: 11px;
+        margin: 3px
+    }
+    .p {
+        background-color: #607D8B
+    }
+    .n {
+        background-color: #ff5722
+    }
+    .w {
+        background-color: #607d8b
+    }
+    .sh {
+        background-color: #795548
+    }
+    .nsh {
+        background-color: #e91e63
+    }
+    .s {
+        color: #F15A22
+    }
+    .th {
+        color: #607d8b
+    }
+    .s-d {
+        background-color: #4db6ac
+    }
+    .th-d {
+        background-color: #3d6a80
+    }
+    .footer {
+        width: 100%;
+        bottom: 0;
+        height: 30px;
+        background: #607D8B;
+        text-align: center;
+        color: #fff;
+        line-height: 30px
+    }
+    span {
+        font-size: 11px;
+    }
+    .group {
+        position: relative
+    }
+    #padder {
+        padding-left: 10px;
+        padding-bottom: 15px;
+        font-style: initial;
+        margin-left: 125px
+    }
+    .marger-text {
+        width: 120px;
+        text-align: right;
+        position: absolute;
+    }
+    .addb,
+    .marger {
+        text-align: center
+    }
+    .profimg {
+        width: 300px;
+        float: right;
+        position: relative;
+        z-index: 999;
+        cursor: pointer;
+        transition: .1s;
+        -webkit-transition: .1s
+    }
+    .profimg:hover {
+        border-radius: 5px
+    }
+    input {
+        width: 175px!important;
+        margin: 0!important;
+        padding: 2px!important
+    }
+    .addb,
+    button {
+      background: #025ba3;
+ background-image: -webkit-linear-gradient(top, #025ba3, #1190d4);
+ background-image: -moz-linear-gradient(top, #025ba3, #1190d4);
+ background-image: -ms-linear-gradient(top, #025ba3, #1190d4);
+ background-image: -o-linear-gradient(top, #025ba3, #1190d4);
+ background-image: linear-gradient(to bottom, #025ba3, #1190d4);
+ -webkit-border-radius: 35;
+ -moz-border-radius: 28;
+ border-radius: 35px;
+ text-shadow: 2px 1px 3px #030b9e;
+ font-family: Arial;
+ color: #ffffff;
+ font-size: 60px;
+ padding: 10px 20px 12px 20px;
+ text-decoration: none;
+    }
+    button:hover {
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+      text-decoration: none;
+}
+    select {
+        width: 183px!important;
+        padding: 2px;
+        font-size: 13px;
+    }
+    button {
+        border-radius: 4px;
+        border: 0;
+        font-size: 30px;
+        max-width: 99%;
+        width: 175px;
+        padding: 15px;
+        transition: .3s;
+        -webkit-transition: .3s
+    }
+    button:hover {
+        border-radius: 9px
+    }
+    .marger {
+        width: 100%
+    }
+    .addb {
+        border-radius: 4px;
+        border: 0;
+        font-size: 13px;
+        width: 95px;
+        display: block;
+        padding: 8.5px;
+        transition: .1s;
+        -webkit-transition: .1s
+    }
+    .addb:hover {
+        border-radius: 10px
+    }
+    .radio {
+        width: auto!important;
+        margin-left: 7px!important
+    }
+    input[type="radio"] {
+        width: auto !important;
+        height: auto !important;
+    }
+    textarea {
+        width: 519px;
+        margin: 0!important;
+        padding: 2px!important;
+        height: 75px;
+    }
+    @media (max-width: 742px) {
+        textarea {
+            width: 375px;
+        }
+    }
+    @media (max-width: 548px) {
+        textarea {
+            max-width: 245px;
+        }
+    }
+    @media (max-width: 405px) {
+        textarea {
+            width: 175px;
+        }
+    }
+    @media (max-width: 337px) {
+        .marger-text {
+            width: 75px;
+        }
+        #padder {
+            margin-left: 79px;
+        }
+    }
+    .refc {
+        margin-bottom: 7.7px;
+    }
+    .refbox {
+        margin: 2px !important;
+    }
+    .addb {
+        background-color: rgba(82, 86, 89, 0.82) !important;
+    }
+    .marger-text {
+        font-size: 13px;
+    }
+
+    input[type="text"]{
+        font-size: 13px;
+        padding: 1px;
+    }
+    #req{
+        color: red;
+    }
+</style>
+
+<script src="../../code.jquery.com/jquery-1.12.1.min.js"></script>
+<script type="text/javascript">
+var eduID = 500;
+var portID = 300;
+var eduCount = 0;
+var portCount = 0;
+var langCount = 0;
+var eduIDs = 0;
+var portIDs = 0;
+
+
+var hider = function($id) {
+document.getElementById($id).style.display = "none";
+document.getElementById($id).type = "text";
+document.getElementById($id).value = "errHidden";
+if (document.getElementById($id - 1).checked) {
+    document.getElementById($id).style.display = "none";
+    document.getElementById($id).type = "text";
+    document.getElementById($id).value = "errHidden";
+} else {
+    document.getElementById($id).style.display = "inline-block";
+    document.getElementById($id).type = "date";
+    document.getElementById($id).value = "";
+}
+};
+
+
+
+var loadFile = function(event) {
+    var output = document.getElementById("output");
+    output.src = URL.createObjectURL(event.target.files[0]);
+};
+var disdr = function(event) {
+    document.getElementById("radioclicker").style.display = "none";
+    document.getElementById("per_drive").style.display = "block";
+    document.getElementById("per_drive").required = "true";
+};
+var zulu = function(event) {
+    document.getElementById("zuluone").style.display = "none";
+    document.getElementById("zulutwo").style.display = "block";
+    document.getElementById("zulutwo").value = "";
+};
+
+$("#eduSHTO").click(function(event) {
+    event.preventDefault();
+    eduID += 15;
+    eduIDs = eduID - 1;
+    $("#edu").append("<hr style='width:50%;margin:auto;margin-top:25px;margin-bottom:25px;'> <div id='edu'> <div class='group'> <div class='marger-text'>Emri i institucionit:<span id='req'>*</span></div> <div id='padder'> <input type='text' name='edu_emri[]' required/> </div> </div> <div class='group'> <div class='marger-text'>Titulli:<span id='req'>*</span></div> <div id='padder'> <input type='text' name='edu_tipi[]' /> </div> </div> <div class='group'> <div class='marger-text'>Drejtimi<span id='req'>*</span>:</div> <div id='padder'> <input type='text' name='edu_drejtimi[]' required/> </div> </div> <div class='group'> <div class='marger-text'>Data e fillimit:<span id='req'>*</span></div> <div id='padder'> <input type='date' name='edu_nga[]' max='2017-02-19' required/> </div> </div> <div class='group'> <div class='marger-text'>Data e mbarimit:<span id='req'>*</span></div> <div id='padder'> <input type='date' name='edu_deri[]' id='" + eduID + "' max='2017-02-19'/> <span style='font-size: 13px;'> <input type='checkbox' id='" + eduIDs + "' name='edu_date[]' class='radio' onclick='hider(" + eduID + ")'> Vazhdoj</span> </div> </div> </div>");
+    eduCount++;
+    if (eduCount == 3) {
+        $("#eduSHTO").hide();
+    }
+});
+
+$("#portSHTO").click(function(event) {
+    portID += 15;
+    portIDs = portID - 1;
+    event.preventDefault();
+    $("#port").append("<hr style='width:50%;margin:auto;margin-top:25px;margin-bottom:25px;'><div id='port'> <br/> <div class='group'> <div class='marger-text'>Institucioni:</div> <div id='padder'> <input type='text' name='port_emri[]' /> </div> </div> <div class='group'> <div class='marger-text'>Pozita:</div> <div id='padder'> <input type='text' name='poz[]' /> </div> </div> <div class='group'> <div class='marger-text'>Data e fillimit:</div> <div id='padder'> <input type='date' name='port_from[]' max='2017-02-19' /> </div> </div> <div class='group'> <div class='marger-text'>Data e mbarimit:</div> <div id='padder'> <input type='date' name='port_to[]' id='" + portID + "' max='2017-02-19'/> <span style='font-size:13px;'> <input type='checkbox' id='" + portIDs + "' name='port_date[]' class='radio' onclick='hider(" + portID + ")'> Vazhdoj</span> </div> </div> <div class='group'> <div class='marger-text'>Detyrat/<br>Përgjegjësitë:</div> <div id='padder'> <textarea name='port_d[]' ></textarea> </div> </div> <div class='group'> <div class='marger-text'>Mbikëqyrësi:</div> <div id='padder'> <input type='text' name='port_sup[]' /> </div> </div> </div> ");
+    portCount++;
+    if (portCount == 3) {
+        $("#portSHTO").hide();
+    }
+});
+
+$("#langSHTO").click(function(event) {
+    event.preventDefault();
+    $("#lang").append("<hr style='width:50%;margin:auto;margin-top:25px;margin-bottom:25px;'> <div id='lang'> <div class='group'> <div class='marger-text'>Gjuha:<span id='req'>*</span></div> <div id='padder'> <select name='lang_name[]' required> <option value=''>-</option> <option value='0'>Shqipe</option> <option value='1'>Angleze</option> <option value='2'>Serbe</option> <option value='3'>Gjermane</option> <option value='4'>Turke</option> <option value='5'>Frënge</option> </select> </div> </div> <div class='group'> <div class='marger-text'>Niveli i njohjes:<span id='req'>*</span></div> <div id='padder'> <select name='lang_w[]' required> <option value=''>-</option> <option value='0'>Dobët</option> <option value='1'>Mirë</option> <option value='2'>Shumë Mirë</option> <option value='3'>Shkëlqyeshëm</option> <option value='4'>Amtare</option> </select> </div> </div> </div>");
+    langCount++;
+    if (langCount == 5) {
+        $("#langSHTO").hide();
+    }
+});
+
+
+$('#clicker').bind('change', function() {
+    if (this.files[0].size / 1024 / 1024 > 1) {
+        alert("Dimensioni i imazhit eshte shume i madh, ju lutem perdorni nje imazh tjeter!");
+    } else {
+        loadFile(event);
+    }
+});
+</script>
