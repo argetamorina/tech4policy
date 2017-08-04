@@ -7,7 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Aplikimi per kurorezim</title>
     <link rel="icon" type="image/png" href="img/image.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> 
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
 
     </head>
 
@@ -21,16 +33,7 @@
   ga('create', 'UA-86869585-2', 'auto');
   ga('send', 'pageview');
 </script>
-
-    <a href="">
-      <section class="menu">
-          <div class="menu-left-part">
-          <p><b>Aplikimi për kurorëzim</b></p>
-          </div>
-      </section>
-    </a>
-    <br>
-    <br>
+    <h1 id="homeHeading" style="text-align: center">Apliko për kurorëzim</h1>
     <section class="content cw " style="text-align: left;background:white">
         <h1 class="viz-title">Te dhenat personale te personit te pare</h1> <img id="output" src='img/profile.png' onchange="loadFile(event)" class="profimg" onclick="document.getElementById('clicker').click()" />
         <form method="post" action="kalendari.html" enctype="multipart/form-data">
@@ -154,10 +157,11 @@
                 </div>
                 <br/>
                 <!-- /personal -->
+                <hr/>
 
                 <input type="file" accept="image/*" onchange="" style="display: none;" id="clicker" name="imgs">
                 <div class="marger">
-                    <button name="submit">Cakto datën e kurorëzimit</button>
+                    <a href="kalendari.html" class="btn btn-primary btn-xl page-scroll">Cakto datën e kurorëzimit</a>
                 </div>
             </div>
         </form>

@@ -9,7 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>Apliko per pune</title>
     <link rel="icon" type="image/png" href="image.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet"> </head>
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
 
 <body style="background: rgba(82, 86, 89, 0.06);">
 <script>
@@ -20,17 +32,9 @@
   ga('create', 'UA-86869585-2', 'auto');
   ga('send', 'pageview');
 </script>
-
-    <a href="#">
-        <section class="menu">
-            <div class="menu-left-part">
-            <p><b>Aplikimi për punë</b></p>
-            </div>
-        </section>
-    </a>
-    <br>
-    <br>
+    <h1 id="homeHeading" style="text-align: center">Apliko për punë </h1>
     <section class="content cw " style="text-align: left;background:white">
+        <!-- <h1>Aplikimi per pune</h1> -->
         <h1 class="viz-title">Personale</h1> <img id="output" src='img/profile1.png' onchange="loadFile(event)" class="profimg" onclick="document.getElementById('clicker').click()" />
         <form method="post" enctype="multipart/form-data">
             <!-- personal -->
@@ -277,7 +281,12 @@
                 </div>
                 <input type="file" accept="image/*" onchange="" style="display: none;" id="clicker" name="imgs">
                 <div class="marger">
-                    <button name="submit">Apliko</button>
+        
+                <!-- /personal -->
+                <hr/>
+
+                   <!--  <a href="http://startbootstrap.com/template-overviews/creative/" class="btn btn-default btn-xl sr-button">Download Now!</a> -->
+                   <a href="#about" class="btn btn-primary btn-xl page-scroll">Apliko</a>
                 </div>
             </div>
         </form>
@@ -350,26 +359,28 @@
         display: inline-block
     }
     .menu {
-        width: 100%;
-        height: 80px;
-        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .2);
-        color: #fff;
+        /*width: 100%;*/
+        /*height: 20px;*/
+        /*box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .2);*/
+        /*color: #fff;*/
         text-align: center;
-        background: #1688A2;
-        border-bottom-right-radius: 2px;
-        border-bottom-left-radius: 2px
+        /*background: #1688A2;*/
+        /*border-bottom-right-radius: 2px;*/
+        /*border-bottom-left-radius: 2px*/
     }
     a {
         text-decoration: none;
         color: inherit
     }
     .menu-left-part {
+        text-align: center;
         margin-right: 10px;
-        line-height: 20px;
+        /*line-height: 20px;*/
+        box-shadow: 0 5px 17px 0 rgba(0, 0, 0, .2);
         background-position: center;
         background-repeat: no-repeat;
         width: 250px;
-        height: 100%;
+        /*height: 100%;*/
     }
   p{
       text-shadow: 5px 5px 10px #FFFFFF;
@@ -587,7 +598,7 @@
         padding: 2px!important
     }
     .addb,
-    button {
+/*    button {
       background: #025ba3;
  background-image: -webkit-linear-gradient(top, #025ba3, #1190d4);
  background-image: -moz-linear-gradient(top, #025ba3, #1190d4);
@@ -603,8 +614,8 @@
  font-size: 60px;
  padding: 10px 20px 12px 20px;
  text-decoration: none;
-    }
-    button:hover {
+    }*/
+/*    button:hover {
       background: #3cb0fd;
       background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
       background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
@@ -612,7 +623,7 @@
       background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
       background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
       text-decoration: none;
-}
+}*/
     select {
         width: 183px!important;
         padding: 2px;
